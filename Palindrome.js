@@ -1,16 +1,15 @@
-let str="naman";
-
-let rev="";
-for(let i=str.length-1; i>0; i--)
-{
-    rev=str[i];
+let str = "acde";
+let rev = true;
+let n = str.length;
+for (let i = 0; i <= n / 2; i++) {
+    if (str[i] != str[n - i - 1]) {
+        rev = false;
+    }
 }
 
-if(rev==str)
-{
+if (rev == true) {
     console.log("yes");
 }
-else
-{
+else {
     console.log("no");
 }
