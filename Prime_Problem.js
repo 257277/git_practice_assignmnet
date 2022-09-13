@@ -1,11 +1,11 @@
 let x = 10;
 let count = 0;
-for (let i = 2; i <= x; i++) {
-    if (x % 2 != 0) {
+for (let i = 1; i <= x; i++) {
+    if (x % i== 0) {
         count++;
     }
 }
-if (count >= 1) {
+if (count == 2) {
     console.log("Yes");
 }
 else {
